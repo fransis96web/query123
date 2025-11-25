@@ -137,9 +137,10 @@ show databases;
 ```
 
 ---
-### LAINNYA
+### LAINNYA   
 
-**Tambah rule**  
+
+**Tambah rule `Admin`**  
 ```query
 ALTER TABLE users MODIFY level ENUM('admin', 'petugas', 'mahasiswa') NOT NULL;
 ```
