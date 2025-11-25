@@ -139,6 +139,12 @@ show databases;
 ---
 ### LAINNYA
 
+**Tambah rule**  
+```query
+ALTER TABLE users MODIFY level ENUM('admin', 'petugas', 'mahasiswa') NOT NULL;
+```
+
+
 ```bash
 create database toko;
 ```
