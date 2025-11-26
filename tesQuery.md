@@ -11,7 +11,7 @@ show databases;
 ```sql
 create database phpdasar;
 ```  
-- **Masuk kedalam database** (Menggunakan database php dasar)
+- **Masuk kedalam database** (Menggunakan database bernama `phpdasar`)
 ```sql
 use phpdasar;
 ```
