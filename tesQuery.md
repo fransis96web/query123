@@ -102,7 +102,7 @@ select * from mahasiswa;
 update mahasiswa set jurusan='Informatika' where id = 2;
 ```
 
-- **Menampilkan isi table (READ)**
+- **Menampilkan isi table** (Menampilkan isi tabel mahasiswa)
 ```sql
 select * from mahasiswa;
 ```
@@ -116,14 +116,14 @@ delete from mahasiswa where id=1;
 ```sql
 select * from mahasiswa;
 ```
-- **DELETE**
+- **DELETE** (Hapus record data mahasiswa berdasarkan id) 
 ```sql
 delete from mahasiswa where id=1;
 ```
 
-- **Menghapus table (e.g., menghapus tabel mahasiswa)**
+- **Menghapus table** (e.g., drop table mahasiswa)  
 ```sql
-drop table mahasiswa;
+drop table nama_tabel;
 ``` 
 
 - **Menghapus database**
