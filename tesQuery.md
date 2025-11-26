@@ -71,7 +71,7 @@ select nrp,nama,jurusan from mahasiswa;
 select nama,gambar from mahasiswa;
 ```
 
-- **Menambah 1 record pada tabel mahasiswa (CREATE)**
+- **Menambah 1 record pada tabel mahasiswa** (e.g., input data mahasiswa)**
 ```sql
 insert into mahasiswa values(
   '','Agnes','215410000','agnes@hotmail.com','Teknik Komputer','Agnes.jpg'
