@@ -136,6 +136,11 @@ drop database phpdasar;
 show databases;
 ```
 
+- **Hapus 1 Field / Kolom:**
+```sql
+ALTER TABLE nama_tabel DROP COLUMN nama_kolom;
+```  
+
 ---
 ### LAINNYA   
 
