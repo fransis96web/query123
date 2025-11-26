@@ -8,11 +8,11 @@ mysql -u root
 show databases;
 ```
 - **Membuat database**
-```bash
+```sql
 create database phpdasar;
 ```  
 - **Masuk kedalam database** (*Menggunakan database*)
-```bash
+```sql
 use phpdasar;
 ```
 - **Membuat table dengan nama mahasiswa**
@@ -28,7 +28,7 @@ create table mahasiswa(
 ```
 
 - **Melihat tabel-tabel di database phpdasar**
-```bash
+```sql
 show tables;
 ```
 
@@ -50,7 +50,7 @@ select * from mahasiswa;
 ```
 
 - **Menampilkan data dari field nama**
-```bash
+```sql
 select nama from mahasiswa;
 ```
 
@@ -88,7 +88,7 @@ select nrp,nama,jurusan from mahasiswa;
 ```
 
 - **Mencari data berdasarkan nrp / nim (READ - SEARCHING)**
-```bash
+```sql
 select * from mahasiswa where nrp='215410072';
 ```
 
@@ -112,8 +112,8 @@ select * from mahasiswa;
 delete from mahasiswa where id=1;
 ```
 
-- **Menampilkan isi table (READ)**
-```bash
+- **Menampilkan isi table** (e.g., menampilkan isi tabel mahasiswa)
+```sql
 select * from mahasiswa;
 ```
 - **DELETE**
@@ -121,7 +121,7 @@ select * from mahasiswa;
 delete from mahasiswa where id=1;
 ```
 
-- **Menghapus table “mahasiswa”**
+- **Menghapus table (e.g., menghapus tabel mahasiswa)**
 ```sql
 drop table mahasiswa;
 ``` 
@@ -131,7 +131,7 @@ drop table mahasiswa;
 DROP DATABASE phpdasar;
 ```
 
-- **Menampilkan (Melihat) database**
+- **Menampilkan semua database**
 ```sql
 SHOW DATABASES;
 ```
@@ -151,13 +151,13 @@ ALTER TABLE users MODIFY level ENUM('admin', 'petugas', 'mahasiswa') NOT NULL;
 ```
 
 
-```bash
+```sql
 create database toko;
 ```
-```bash
+```sql
 use toko;
 ```
-```bash
+```sql
 create table if not exists barang (
   id int auto_increment not null primary key,
   nama varchar(40) not null,
@@ -166,7 +166,7 @@ create table if not exists barang (
   foto varchar(70) not null default ''
 );
 ```
-```bash
+```sql
 insert into barang(nama,harga,stok, foto) values
   ('Sepatu Adidas 1',500000,5,'sepatu1.jpg'),
   ('Sepatu Adidas 2',600000,5,'sepatu2.jpg'),
