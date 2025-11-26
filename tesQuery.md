@@ -1,10 +1,10 @@
 - **Masuk ke MySQL**
-```
+```sql
 mysql -u root
 ``` 
 
 - **Melihat daftar database**
-```
+```sql
 show databases;
 ```
 - **Membuat database**
@@ -16,7 +16,7 @@ create database phpdasar;
 use phpdasar;
 ```
 - **Membuat table dengan nama mahasiswa**
-```bash  
+```sql  
 create table mahasiswa(
   id int primary key auto_increment,
   nama varchar(100),
@@ -33,19 +33,19 @@ show tables;
 ```
 
 - **Melihat deskripsi tabel**
-```bash
+```sql
 describe mahasiswa;
 ```
 
 - **Menambahkan data kedalam tabel (CERATE)**
-```bash
+```sql
 insert into mahasiswa values (
   '', 'Fransis', '215410072', 'fransis@example.info','Informatika','frans.jpg'
 );
 ``` 
 
 - **Melihat isi tabel**
-```bash
+```sql
 select * from mahasiswa;
 ```
 
@@ -55,35 +55,35 @@ select nama from mahasiswa;
 ```
 
 - **Melihat data pada field tertentu (Misalnya NIM / nrp)**
-```bash
+```sql
 select nrp from mahasiswa;
 ```
 
-```bash
+```sql
 select nrp,nama from mahasiswa;
 ```
 
-```bash
+```sql
 select nrp,nama,jurusan from mahasiswa;
 ```
 - **READ**
-```bash
+```sql
 select nama,gambar from mahasiswa;
 ```
 
 - **Menambah 1 record pada tabel mahasiswa (CREATE)**
-```bash
+```sql
 insert into mahasiswa values(
   '','Agnes','215410000','agnes@hotmail.com','Teknik Komputer','Agnes.jpg'
 );
 ```
 
 - **Menampilkan data dari field tertentu  (READ)**
-```bash
+```sql
 select nama from mahasiswa;
 ```
 - **READ**
-```bash
+```sql
 select nrp,nama,jurusan from mahasiswa;
 ```
 
@@ -93,22 +93,22 @@ select * from mahasiswa where nrp='215410072';
 ```
 
 - **Menampilkan isi tabel**
-```bash
+```sql
 select * from mahasiswa;
 ```
 
 - **Melakukan Edit Data / Record berdasarkan primary key "id" (UPDATE)**
-```bash
+```sql
 update mahasiswa set jurusan='Informatika' where id = 2;
 ```
 
 - **Menampilkan isi table (READ)**
-```bash
+```sql
 select * from mahasiswa;
 ```
 
 - **Menghapus 1 Record (atau data) berdasarkan id / primary key**
-```bash
+```sql
 delete from mahasiswa where id=1;
 ```
 
@@ -117,23 +117,23 @@ delete from mahasiswa where id=1;
 select * from mahasiswa;
 ```
 - **DELETE**
-```bash
+```sql
 delete from mahasiswa where id=1;
 ```
 
 - **Menghapus table “mahasiswa”**
-```bash
+```sql
 drop table mahasiswa;
 ``` 
 
 - **Menghapus database**
-```bash
-drop database phpdasar;
+```sql
+DROP DATABASE phpdasar;
 ```
 
 - **Menampilkan (Melihat) database**
-```bash
-show databases;
+```sql
+SHOW DATABASES;
 ```
 
 - **Hapus 1 Field / Kolom:**
