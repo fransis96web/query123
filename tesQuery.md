@@ -3,7 +3,7 @@
 mysql -u root
 ``` 
 
-- **Melihat daftar database**
+- **Menampilkan database** (Melihat database)
 ```sql
 show databases;
 ```
@@ -11,7 +11,7 @@ show databases;
 ```sql
 create database phpdasar;
 ```  
-- **Masuk kedalam database** (___Menggunakan database php dasar___)
+- **Masuk kedalam database** (Menggunakan database php dasar)
 ```sql
 use phpdasar;
 ```
