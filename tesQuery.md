@@ -7,7 +7,7 @@ mysql -u root
 ```sql
 show databases;
 ```
-- **Membuat database** (Membuat database baru dengan nama `phpdasar`)
+- **Membuat database** (Membuat database baru bernama `phpdasar`)
 ```sql
 create database phpdasar;
 ```  
