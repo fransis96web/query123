@@ -1,5 +1,5 @@
 - **Masuk ke MySQL**
-```psd1
+```cmd
 mysql -u root
 ``` 
 
